@@ -14,7 +14,6 @@ public class Praktikum4 {
     static void jumlahStokRG4(int[][] stokBunga, int[] bungaMati, int[] jumlahStok) {
 
         for (int i = 0; i < stokBunga[3].length; i++) {
-
             System.out.println("Jenis bunga " + (i + 1) + " : " + stokBunga[3][i]);
         }
     }
