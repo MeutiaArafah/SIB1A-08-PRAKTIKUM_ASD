@@ -4,6 +4,12 @@ public class Mahasiswa08 {
     String kelas;
     double ipk;
 
+    // public Mahasiswa08(String nm, String nim, double ipk, String kls){
+    //     nama = nm;
+    //     this.nim = nim;
+    //     this.ipk = ipk;
+    //     kelas = kls;
+    // }
 
     void tampilkanInformasi(){
         System.out.println("Nama: " + nama);
@@ -17,7 +23,8 @@ public class Mahasiswa08 {
     }
 
     void updateIpk(double ipkBaru){
-        if (0.0 <= ipk && ipk <= 4.0) {
+        ipk = ipkBaru;
+        if (ipkBaru >= 0.0 && ipkBaru <= 4.0) {
             ipk = ipkBaru;
             
         } else{
