@@ -1,9 +1,9 @@
 public class MahasiswaMain08 {
 
     public static void main(String[] args) {
-        Mahasiswa08 mhs1 = new Mahasiswa08();
+        Mahasiswa08 mhs1 = new Mahasiswa08(); // "Muhammad Ali Farhan", "22417220171", 3.55, "SI 2J "
         mhs1.nama = "Muhammad Ali Farhan";
-        mhs1.nim = " 22417220171";
+        mhs1.nim = "22417220171";
         mhs1.kelas = "SI 2J";
         mhs1.ipk = 3.55;
 
@@ -11,5 +11,16 @@ public class MahasiswaMain08 {
         mhs1.ubahKelas("SI 2K");
         mhs1.updateIpk(3.60);
         mhs1.tampilkanInformasi();
+
+        Mahasiswa08 mhs2 = new Mahasiswa08(); //"Annisa Nabila", "2141720160", 3.25, "TI 2L"
+        mhs2.updateIpk(3.30);
+        mhs2.tampilkanInformasi();
     }
 }
+
+// public Mahasiswa08(String nm, String nim, double ipk, String kls){
+//     nama = nm;
+//     this.nim = nim;
+//     this.ipk = ipk;
+//     kelas = kls;
+// }
