@@ -4,6 +4,7 @@ public class MahasiswaDemo08 {
 
    Scanner sc = new Scanner(System.in);
     Mahasiswa08[] arrayOfMahasiswa = new Mahasiswa08[3];
+    Mahasiswa08[] myArrayOfMahasiswa08 = new Mahasiswa08[3];
     String dummy; 
 
     for(int i = 0; i < 3 ; i++){
