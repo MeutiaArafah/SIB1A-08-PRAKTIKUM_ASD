@@ -1,5 +1,5 @@
 public class MahasiswaBerprestasi08 {
-    Mahasiswa08 [] listMhs = new Mahasiswa08[5];
+    Mahasiswa08 [] listMhs = new Mahasiswa08[3];
     int idx;
 
     // untuk menambahkan objek dari class mahasiswa ke listMhs
@@ -47,7 +47,7 @@ public class MahasiswaBerprestasi08 {
 
     // insertion 
     void insertionSort(){
-        > asc
+        // asc
         // for(int i = 1; i < listMhs.length; i++){
         //     Mahasiswa08 temp = listMhs[i];
         //     int j = i; 
@@ -102,5 +102,21 @@ public class MahasiswaBerprestasi08 {
         }
     }
 
-    
+    // searching 
+    int findBinarySearch(double cari, int left, int right){
+        int mid; // nilai tengah
+        if(right >= left){
+            mid = (left + right) / 2;
+            if(cari == listMhs[mid].ipk){
+                return (mid);
+            }
+             else if(listMhs[mid].ipk < cari){
+                return findBinarySearch(cari, left, mid-1);
+             } 
+             else{
+                return findBinarySearch(cari, mid+1, right);
+             }
+        }
+         return -1;
+    }
 }
