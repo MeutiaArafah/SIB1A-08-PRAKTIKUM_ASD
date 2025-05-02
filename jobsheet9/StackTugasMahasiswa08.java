@@ -26,12 +26,12 @@ public class StackTugasMahasiswa08 {
     }
 
     public void push(Mahasiswa08 mhs){ //masukkan elemen
-        if (!isFull()) {
+        
             top++;
             stack[top] = mhs;
-        } else {
-            System.out.println("Stack penuh! Tidak bisa menambahkan tugas lagi.");
-        }
+      
+            // System.out.println("Stack penuh! Tidak bisa menambahkan tugas lagi.");
+        
     }
 
     public Mahasiswa08 pop(){ // mengambil data paling atas
@@ -59,5 +59,14 @@ public class StackTugasMahasiswa08 {
             System.out.println(stack[i].nama + "\t" + stack[i].nim + "\t" + stack[i].kelas);
         }
         System.out.println("");
+    }
+
+    public Mahasiswa08 terbawah(){
+        if(!isEmpty()){
+            return stack[0];
+        } else {
+            System.out.println("Stack kosong! Tidak ada tugas yang dikumpulkan");
+            return null; // berarti datanya gaada
+        }
     }
 }
