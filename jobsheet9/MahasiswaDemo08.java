@@ -23,7 +23,7 @@ public class MahasiswaDemo08 {
                     String nim = scan.nextLine();
                     System.out.print("Kelas: ");
                     String kelas = scan.nextLine();
-                    Mahasiswa08 mhs = new Mahasiswa08(nama, nim, kelas);
+                    Mahasiswa08 mhs = new Mahasiswa08(nim, nama, kelas);
                     stack.push(mhs);
                     System.out.printf("Tugas %s berhasil dikumpulkan", mhs.nama);
                     System.out.println();
