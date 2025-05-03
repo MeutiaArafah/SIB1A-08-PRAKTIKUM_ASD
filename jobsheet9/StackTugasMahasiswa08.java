@@ -3,13 +3,13 @@ public class StackTugasMahasiswa08 {
     int top;
     int size;
 
-    public StackTugasMahasiswa08(int size) { // cek apakah tumpukan tugas sudah penuh
+    public StackTugasMahasiswa08(int size) { // construktor
         this.size = size;
         stack = new Mahasiswa08[size];
         top = -1;
     }
 
-    public boolean isFull() {
+    public boolean isFull() { // cek apakah tumpukan tugas sudah penuh
         if (top == size - 1) {
             return true;
         } else {
@@ -26,12 +26,12 @@ public class StackTugasMahasiswa08 {
     }
 
     public void push(Mahasiswa08 mhs) { // masukkan elemen
-
-        top++;
-        stack[top] = mhs;
-
-        // System.out.println("Stack penuh! Tidak bisa menambahkan tugas lagi.");
-
+        if (!isFull()) {
+            top++;
+            stack[top] = mhs;
+        } else {
+            System.out.println("Stack penuh! Tidak bisa menambahkan tugas lagi.");
+        }
     }
 
     public Mahasiswa08 pop() { // mengambil data paling atas
@@ -77,7 +77,7 @@ public class StackTugasMahasiswa08 {
     // PRAKTIKUM NOMER 2
     public String konversiDesimalKeBiner(int nilai) {
         StackKonversi08 stack = new StackKonversi08();
-        while (nilai > 0) {
+        while (kode != 0) {
             int sisa = nilai % 2;
             stack.push(sisa);
             nilai = nilai / 2;
