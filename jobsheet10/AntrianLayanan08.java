@@ -39,6 +39,16 @@ public class AntrianLayanan08 {
         }
     }
 
+    public void lihatAkhir() { // menampilkan elemen queue paling belakang
+        if (isEmpty()) {
+            System.out.println("Antiran kosong");
+        } else {
+            System.out.print("Mahasiswa terakhir: ");
+            System.out.println("NIM - NAMA - PRODI - KELAS");
+            data[rear].tampilkanData();
+        }
+    }
+
     public void tampilkanSemua() { // menampilkan seluruh elemen pada queue
         if (isEmpty()) {
             System.out.println("Antrian kosong");
