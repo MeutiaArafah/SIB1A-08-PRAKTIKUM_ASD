@@ -2,21 +2,6 @@
 public class BinaryTreeMain08 {
 
     public static void main(String[] args) {
-//         System.out.println("tes");
-//         System.out.println("Program dimulai...");
-
-//         BinaryTree08 bst = new BinaryTree08();
-//         // Tambah data
-//         Mahasiswa08 m1 = new Mahasiswa08("244160121", "Ali", "A", 3.57);
-//         Mahasiswa08 m2 = new Mahasiswa08("244160221", "Badar", "B", 3.85);
-//         System.out.println("Menambahkan Ali...");
-//         bst.add(m1);
-//         System.out.println("Menambahkan Badar...");
-//         bst.add(m2);
-//         System.out.println("\nTraversal InOrder:");
-//         bst.traverseInOrder(bst.root);
-//     }
-// }
         BinaryTree08 bst = new BinaryTree08();
 
         bst.add(new Mahasiswa08("244160121", "Ali", "A", 3.57));
@@ -52,5 +37,18 @@ public class BinaryTreeMain08 {
         System.out.println("\nDaftar semua mahasiswa setelah penghapusan 1 mahasiswa (in order traversal):");
         bst.traverseInOrder(bst.root);
 
+        bst.addRekursif(new Mahasiswa08("244160121", "Ali", "A", 3.57));
+        System.out.println("\nDaftar semua mahasiswa setelah penambahan Ali:");
+        bst.traverseInOrder(bst.root);
+        
+        System.out.println("\nMin IPK: ");
+        bst.cariMinIPK().tampilInformasi();
+        
+        System.out.println("\nMax IPK: ");
+        bst.cariMaxIPK().tampilInformasi();
+        
+        System.out.println("\nMahasiswa dengan IPK > 3.5 : ");
+        bst.tampilMahasiswaIPKdiAtas();
+        
     }
 }
