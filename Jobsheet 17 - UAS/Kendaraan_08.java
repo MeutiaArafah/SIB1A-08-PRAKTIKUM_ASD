@@ -1,9 +1,9 @@
-public class Kendaraan08 {
+public class Kendaraan_08 {
     String platNomor;
     String tipe;
     String merk;
     
-    public Kendaraan08 (String plat, String tipe, String merk) {
+    public Kendaraan_08 (String plat, String tipe, String merk) {
         this.platNomor = plat;
         this.tipe = tipe;
         this.merk = merk;

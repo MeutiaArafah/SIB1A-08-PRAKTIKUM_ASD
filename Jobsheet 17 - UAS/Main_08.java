@@ -1,8 +1,8 @@
 import java.util.Scanner;
 
-public class Main08 {
-    static AllMethod08 antrianKendaraan = new AllMethod08();
-    static QueueTransaksi riwayatTransaksi = new QueueTransaksi(100);
+public class Main_08 {
+    static AllMethod_08 antrianKendaraan = new AllMethod_08();
+    static QueueTransaksi_08 riwayatTransaksi = new QueueTransaksi_08(100);
 
     public static void main(String[] args) {
         Scanner input = new Scanner(System.in);
@@ -56,7 +56,7 @@ public class Main08 {
         System.out.print("Masukkan Merk Kendaraan : ");
         String merk = input.nextLine();
 
-        Kendaraan08 kendaraan = new Kendaraan08(plat, tipe, merk);
+        Kendaraan_08 kendaraan = new Kendaraan_08(plat, tipe, merk);
         antrianKendaraan.addLast(kendaraan);
         System.out.println(">> Kendaraan berhasil ditambahkan ke antrian.");
     }
@@ -68,7 +68,7 @@ public class Main08 {
         }
 
         int pilihanBBM;
-        Kendaraan08 kendaraan = antrianKendaraan.removeFirst();
+        Kendaraan_08 kendaraan = antrianKendaraan.removeFirst();
         System.out.println("Petugas melayani " + kendaraan.platNomor);
         
         do {
@@ -110,8 +110,8 @@ public class Main08 {
         System.out.print("Masukkan Jumlah liter: ");
         double liter = input.nextDouble();
 
-        BBM08 bbm = new BBM08(namaBBM, hargaPerLiter);
-        TransaksiPengisian08 transaksi = new TransaksiPengisian08(kendaraan, bbm, liter);
+        BBM_08 bbm = new BBM_08(namaBBM, hargaPerLiter);
+        TransaksiPengisian_08 transaksi = new TransaksiPengisian_08(kendaraan, bbm, liter);
         riwayatTransaksi.enqueue(transaksi);
         System.out.println(">> Transaksi berhasil dilayani.");
     }

@@ -1,13 +1,13 @@
-public class QueueTransaksi {
-    TransaksiPengisian08[] queue;
+public class QueueTransaksi_08 {
+    TransaksiPengisian_08[] queue;
     int front;
     int rear;
     int maxSize;
     int count;
     
-    public QueueTransaksi(int size) {
+    public QueueTransaksi_08 (int size) {
         maxSize = size;
-        queue = new TransaksiPengisian08[maxSize];
+        queue = new TransaksiPengisian_08[maxSize];
         front = 0;
         rear = -1;
         count = 0;
@@ -21,7 +21,7 @@ public class QueueTransaksi {
         return count == maxSize;
     }
     
-    public void enqueue(TransaksiPengisian08 transaksi) {
+    public void enqueue(TransaksiPengisian_08 transaksi) {
         if (!isFull()) {
             rear = (rear + 1) % maxSize;
             queue[rear] = transaksi;
@@ -41,7 +41,7 @@ public class QueueTransaksi {
         int temp = front;
         System.out.println("Daftar transaksi:");
         for (int i = 0; i < count; i++) {
-        TransaksiPengisian08 t = queue[temp];
+        TransaksiPengisian_08 t = queue[temp];
         double hargaSblmDiskon = t.liter * t.bbm.hargaPerLiter;
         double diskon = (t.liter >= 20) ? hargaSblmDiskon * 0.05 : 0;
 

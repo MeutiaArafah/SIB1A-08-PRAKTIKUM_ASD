@@ -1,10 +1,10 @@
-public class TransaksiPengisian08 {
-    Kendaraan08 kendaraan;
-    BBM08 bbm;
+public class TransaksiPengisian_08 {
+    Kendaraan_08 kendaraan;
+    BBM_08 bbm;
     double liter;
     double totalBayar;
 
-    public TransaksiPengisian08 (Kendaraan08 kendaraan, BBM08 bbm, double liter){
+    public TransaksiPengisian_08 (Kendaraan_08 kendaraan, BBM_08 bbm, double liter){
         this.kendaraan = kendaraan;
         this.bbm = bbm;
         this.liter = liter;

@@ -1,13 +1,13 @@
-public class AllMethod08 {
-    NodeKendaraan08 head; 
-    NodeKendaraan08 tail;
+public class AllMethod_08 {
+    NodeKendaraan_08 head; 
+    NodeKendaraan_08 tail;
 
     boolean isEmpty() {
         return (head == null);
     }
 
-    public void addLast(Kendaraan08 input) {
-        NodeKendaraan08 ndInput = new NodeKendaraan08(input, null);
+    public void addLast(Kendaraan_08 input) {
+        NodeKendaraan_08 ndInput = new NodeKendaraan_08(input, null);
         if (isEmpty()) {
             head = ndInput;
             tail = ndInput;
@@ -19,7 +19,7 @@ public class AllMethod08 {
 
     public int size() {
         int count = 0;
-        NodeKendaraan08 temp = head;
+        NodeKendaraan_08 temp = head;
         while (temp != null) {
             count++;
             temp = temp.next;
@@ -34,7 +34,7 @@ public class AllMethod08 {
         }
         
         System.out.println("\n-- Antrian Kendaraan --");
-        NodeKendaraan08 temp = head;
+        NodeKendaraan_08 temp = head;
         int nomor = 1;
         System.out.println("Antrian kendaraan:");
         while (temp != null) {
@@ -44,12 +44,12 @@ public class AllMethod08 {
         }
     }
     
-    public Kendaraan08 removeFirst() {
+    public Kendaraan_08 removeFirst() {
         if (isEmpty()) {
             return null;
         }
         
-        Kendaraan08 removedData = head.data;
+        Kendaraan_08 removedData = head.data;
         head = head.next;
         if (head == null) {
             tail = null;

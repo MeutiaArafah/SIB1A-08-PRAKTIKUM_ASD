@@ -1,8 +1,8 @@
-public class BBM08 {
+public class BBM_08 {
     String namaBBM;
     double hargaPerLiter;
 
-    public BBM08 (String namaBBM, double harga){
+    public BBM_08 (String namaBBM, double harga){
         this.namaBBM = namaBBM;
         hargaPerLiter = harga;
     }
